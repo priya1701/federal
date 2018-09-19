@@ -1,0 +1,53 @@
+{
+  "name": "Federal Dashboard",
+  "pages": [
+    {
+      "default": true,
+      "name": "Hotel Data",
+      "id": "dashboard",
+      "description": "All Available Data",
+      "methods": {
+        "getAll": {
+          "label": "Get All Data",
+          "url": "http://138.68.51.48:3000/api/queries/selectguestbyPolice",
+          "dataPath": null,
+          "display": {
+            "type": "table",
+            "fields": [
+              {
+                "name": "guestId",
+                "type": "text",
+                "label": "Guest Id"
+              },
+              {
+                "name": "name",
+                "type": "text",
+                "label": "Name"
+              },
+              {
+                "name": "type",
+                "type": "text",
+                "label": "Document"
+              },
+              {
+                "name": "checkIn",
+                "type": "text",
+                "label": "Checkin Time"
+              },
+              {
+                "name": "checkOut",
+                "type": "text",
+                "label": "Checkout Time"
+              },
+              {
+                "name": "hotel",
+                "type": "text",
+                "label": "Hotel"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
